@@ -26,7 +26,7 @@ jobs:
       continue-on-error: true
 
     - name: Upload ESLint report
-      if: failure()
+      if: always() # Ensure this runs regardless of success or failure
       uses: actions/upload-artifact@v4
       with:
         name: eslint-report
