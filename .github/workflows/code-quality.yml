@@ -13,10 +13,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'
+        node-version: '18' # Mantenha a versão do Node.js atualizada
 
     - name: Install dependencies
       run: npm install
+
+    - name: Adjust ESLint permissions
+      run: chmod +x ./node_modules/.bin/eslint
 
     - name: Run ESLint
       run: npm run lint
