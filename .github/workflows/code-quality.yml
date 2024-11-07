@@ -8,23 +8,26 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '20' # Mantenha a versão do Node.js atualizada
 
     - name: Install dependencies
       run: npm install
+
+    - name: Adjust ESLint permissions
+      run: chmod +x ./node_modules/.bin/eslint
 
     - name: Run ESLint
       run: npm run lint
       continue-on-error: true
 
     - name: Upload ESLint report
-      if: failure()
-      uses: actions/upload-artifact@v2
+      if: always() # Ensure this runs regardless of success or failure
+      uses: actions/upload-artifact@v4
       with:
         name: eslint-report
         path: eslint-report.html
