@@ -1,6 +1,12 @@
-name: Code Quality
+name: Code Quality and Deploy
 
-on: [push, pull_request]
+on:
+  push:
+    tags:
+      - v*
+  pull_request:
+    branches:
+      - development
 
 jobs:
   lint:
@@ -31,3 +37,27 @@ jobs:
       with:
         name: eslint-report
         path: eslint-report.html
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy to Azure
+        run: |
+          az webapp up --name <seu_nome_de_app> --resource-group <seu_grupo_de_recursos> --runtime "NODE|20-lts"
