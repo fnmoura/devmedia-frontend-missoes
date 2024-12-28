@@ -1,0 +1,180 @@
+/* Zerando e padronizando alguns valores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais Utilizados Por Vários Elementos da Página*/
+body {
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner-linha {
+    display: flex;
+    flex-direction: row;
+    border: green 3px solid;
+}
+
+.conteiner-coluna {
+    display: flex;
+    flex-direction: column;
+    border: red 3px solid;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-itens-center {
+    align-items: center;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+
+/* Seção semântica de cabeçalho */
+header {
+    width: 1024px;
+    margin: auto;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1024px;
+    margin: auto;
+
+    border: yellow 1px solid;
+}
+
+.marca-conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.marca-figurativa {
+    width: 80px;
+    padding: 0 8px 0 0;
+}
+
+.marca-textual {
+    color: #2f86d6;
+}
+
+.marca-textual p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+nav a {
+    margin-left: 16px;
+}
+
+/* Estilos da parte principal da página */
+main {
+    background-color: #fff;
+}
+
+/* Estilo do Banner */
+#banner {
+    background-color: #2f86d6;
+}
+
+.banner-conteiner {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 16px 0px;
+}
+
+.banner-texto {
+    width: 470px;
+    color: #fff;
+}
+
+.banner-figure {
+    width: 50%;
+}
+
+.banner-figure img {
+    width: 100%;
+}
+
+/* Estilo para a seção de anúncio */
+#anuncio01 {
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#anuncio01 article {
+    width: 600px;
+}
+
+#anuncio01 p {
+    text-align: left;
+}
+
+#anuncio01 p:first-of-type {
+    font-weight: bold;
+}
+
+#anuncio01 a {
+    color: #fff;
+    padding: 8px 32px;
+    background-color: #2f86d6;
+}
+
+
+/* Seção de Informações */
+#informacoes {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+#informacoes .texto {
+    width: 900px;
+    padding: 16px 0px;
+}
+
+.grupo-card {
+    padding: 16px 0px;
+}
+
+.card {
+    width: 32%;
+}
+
+.card img {
+    width: 80%;
+}
+
+/* Seção de Planos */
+
+#planos {
+    width: 100%;
+    padding: 100px 0px;
+}

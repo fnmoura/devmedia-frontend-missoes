@@ -5,63 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website para provedor de hospedagem (Missão 09)</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="marca">
+        <div class="marca-conteiner">
             <figure>
-                <img src="./img/logo-icone.png" alt="Logo da AlfaTech - Soluções em hospedagem">
+                <img class="marca-figurativa" src="./img/logo-icone.png"
+                    alt="Logo da AlfaTech - Soluções em hospedagem">
             </figure>
-            <h1>AlfaTech</h1>
-            <p>Soluções em hospedagem</p>
+            <div class="marca-textual">
+                <p>AlfaTech</p>
+                <p>Soluções em hospedagem</p>
+            </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#informacoes">INFORMAÇÕES</a></li>
-                <li><a href="#planos">PLANOS</a></li>
-                <li><a href="tabela-precos.html">PREÇOS</a></li>
-                <li><a href="#contatos">CONTATO</a></li>
-            </ul>
+            <a href="#informacoes">INFORMAÇÕES</a>
+            <a href="#planos">PLANOS</a>
+            <a href="tabela-precos.html">PREÇOS</a>
+            <a href="#contatos">CONTATO</a>
         </nav>
     </header>
 
     <main>
         <section id="banner">
-            <p>Simples - Fácil de usar - 10x mais rápido!</p>
-            <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
-            <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua
-                hospedagem.</p>
-            <figure>
-                <img src="./img/imagem-banner.png"
-                    alt="Banner com um servidor de hospedagem sendo conectado por computadores clientes.">
-            </figure>
+            <div class="conteiner-linha align-itens-center justify-space-between banner-conteiner">
+                <div class="banner-texto">
+                    <p>Simples - Fácil de usar - 10x mais rápido!</p>
+                    <p>O melhor serviço de hospedagem na web para o seu site.</p2>
+                    <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua
+                        hospedagem.</p>
+                </div>
+                <figure class="banner-figure">
+                    <img src="./img/imagem-banner.png"
+                        alt="Banner com um servidor de hospedagem sendo conectado por computadores clientes.">
+                </figure>
         </section>
+        </div>
 
         <section id="anuncio01">
-            <h2>Hospede o seu site por apenas R$ 29,00 por mês</h2>
-            <p>Também temos planos gratuitos. Adquira já o seu.</p>
+            <article>
+                <p>Hospede o seu site por apenas R$ 29,00 por mês</p>
+                <p>Também temos planos gratuitos. Adquira já o seu.</p>
+            </article>
             <a href="tabela-precos.html">TABELA DE PREÇOS</a>
         </section>
 
-        <section id="informacoes">
-            <h2>Existem diversos serviços de hospedagem de sites.</h2>
-            <p>Por que você deve nos escolher?</p>
-            <article>
-                <img src="./img/icone-engrenagens.png" alt="Engrenagens.">
-                <h2>Fácil de configurar</h2>
-                <p>Facilmente configurável em platformas CMS populares - Wordpress, Joomla ...</p>
+        <section id="informacoes" class="conteiner-coluna align-itens-center">
+            <article class="texto conteiner-coluna texto-centralizado">
+                <h3>Existem diversos serviços de hospedagem de sites.</h3>
+                <p>Por que você deve nos escolher?</p>
             </article>
-            <article>
-                <img src="./img/cloud-icone.png" alt="Nuvem com seta de upload sobreposta.">
-                <h2>Servicores 100% Online</h2>
-                <p>Facilmente configurável em platformas CMS populares - Wordpress, Joomla ...</p>
-            </article>
-            <article>
-                <img src="./img/icone-suporte.png" alt="Boneco atendente">
-                <h2>Suporte 24/7</h2>
-                <p>Facilmente configurável em platformas CMS populares - Wordpress, Joomla ...</p>
-            </article>
+            <div class="grupo-card conteiner-linha justify-space-between">
+                <article class="card conteiner-coluna align-itens-center">
+                    <img src="./img/icone-engrenagens.png" alt="Engrenagens.">
+                    <div class="texto-centralizado">
+                        <h4>Fácil de configurar</h4>
+                        <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomla ...</p>
+                    </div>
+                </article>
+                <article class="card conteiner-coluna align-itens-center">
+                    <img src="./img/cloud-icone.png" alt="Nuvem com seta de upload sobreposta.">
+                    <div class="texto-centralizado">
+                        <h4>Servidores 100% Online</h4>
+                        <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomla ...</p>
+                    </div>
+                </article>
+                <article class="card conteiner-coluna align-itens-center">
+                    <img src="./img/icone-suporte.png" alt="Boneco atendente">
+                    <div class="texto-centralizado">
+                        <h4>Suporte 24/7</h4>
+                        <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomla ...</p>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="planos">
@@ -125,8 +147,10 @@
         </section>
 
         <section id="anuncio02">
-            <h2>Mais de 20.000 pessoas confiam na AlfaTech!</h2>
-            <p>Seja um deles você também!</p>
+            <article>
+                <p>Mais de 20.000 pessoas confiam na AlfaTech!</p>
+                <p>Seja um deles você também!</p>
+            </article>
             <a href="tabela-precos.html">TABELA DE PREÇOS</a>
         </section>
 
