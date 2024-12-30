@@ -5,7 +5,18 @@
     box-sizing: border-box;
 }
 
-/* Estilos Gerais Utilizados Por Vários Elementos da Página*/
+/* #region PALETA DE CORES - Estilos relacionados com a paleta de cores do projeto */
+.bgc-000 {
+    background-color: #000;
+}
+
+.bgc-2f86d6 {
+    background-color: #2f86d6;
+}
+
+/* #endregion ESTILOS GERAIS - Fim */
+
+/* #region ESTILOS GERAIS - Estilos gerais para vários elementos da página */
 body {
     font-family: Poppins;
 }
@@ -14,13 +25,19 @@ a {
     text-decoration: none;
 }
 
-.conteiner-linha {
+.conteiner-width {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+.df-row {
     display: flex;
     flex-direction: row;
     border: green 3px solid;
 }
 
-.conteiner-coluna {
+.df-col {
     display: flex;
     flex-direction: column;
     border: red 3px solid;
@@ -38,18 +55,14 @@ a {
     text-align: center;
 }
 
+/* #endregion ESTILOS GERAIS - Fim*/
 
-/* #region Seção de Estilos para o Cabeçalho (head) */
+/* #region CABEÇALHO - Estilos para o cabeçalho (head) */
 header {
     background-color: #fff;
 }
 
-.header-conteiner {
-    max-width: 1024px;
-    width: 100%;
-    margin: auto;
-}
-
+/* #region MARCA - Conjunto de estilos relacionados com a marca no cabeçalho */
 .marca-conteiner {
     padding: 16px 0px;
 }
@@ -69,27 +82,27 @@ header {
     color: #000;
 }
 
+/* #endregion MARCA - Fim */
+/* #region MENU SUPERIOR - Conjunto de estilos relacionados com o menu superior para telas grandes. */
 nav a {
     margin-left: 16px;
 }
 
-/* #endregion */
+/* #endregion MENU SUPERIOR - Fim */
 
+/* #endregion CABEÇALHO - Fim */
 
-/* Seção de Estilos Para a Conteúdo Principal (main) da Página */
+/* #region CONTEÚDO PRINCIPAL - Estilos para o conteúdo principal (main) da página */
 main {
     background-color: #fff;
 }
 
-/* #region Seção de Estilos Usados no Banner */
+/* #region BANNER - Estilos Usados no banner */
 #banner {
     background-color: #2f86d6;
 }
 
 .banner-conteiner {
-    max-width: 1024px;
-    width: 100%;
-    margin: auto;
     padding: 16px 0px;
 }
 
@@ -106,41 +119,51 @@ main {
     width: 100%;
 }
 
-/* #endregion */
+/* #endregion BANNER - Fim */
 
-/* Estilo para a seção de anúncio */
-#anuncio01 {
+/* #region ANÚNCIOS - Conjunto de Estilos usados nos anúncios 01 e 02 */
+/* #region ANÚNCIOS - Estilos comuns para os anúncio 01 e anúncio 02 */
+.anuncio-conteiner {
+    max-width: 1024px;
     width: 100%;
+    margin: auto;
+}
+
+#anuncio01, #anuncio02 {
     padding: 40px 0px;
-    background-color: #000;
     color: #fff;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
-#anuncio01 article {
+.anuncio01-texto, .anuncio02-texto {
     width: 600px;
-}
-
-#anuncio01 p {
     text-align: left;
 }
 
-#anuncio01 p:first-of-type {
+#anuncio01 a, #anuncio02 a {
+    color: #fff;
+    padding: 8px 32px;
+}
+
+/* #endregion ANÚNCIO 01 e 02 - Fim */
+/* #region ANÚNCIO 01 - Estilos Específicos para o Anúncio 01 */
+.anuncio01-texto p:first-of-type {
     font-weight: bold;
 }
 
 #anuncio01 a {
-    color: #fff;
-    padding: 8px 32px;
     background-color: #2f86d6;
 }
 
+/* #endregion ANÚNCIO 01 - Fim */
+/* #region ANÚNCIO 02 - Estilos Específicos para o Anúncio 02 */
+#anuncio02 a {
+    background-color: #000;
+}
 
-/* Seção de Informações */
+/* #endregion ANÚNCIO 02 - Fim */
+/* #endregion ANÚNCIOS - Fim */
+
+/* #region INFORMAÇÕES - Estilos associados com as informações */
 #informacoes {
     width: 100%;
     padding: 100px 0px;
@@ -163,9 +186,18 @@ main {
     width: 80%;
 }
 
-/* Seção de Planos */
+/* #endregion INFORMAÇÕES - Fim */
 
+/* #region PLANOS - Estilos associados aos planos */
 #planos {
     width: 100%;
     padding: 100px 0px;
 }
+
+/* #endregion PLANOS - Fim*/
+
+/* #endregion MAIN - Fim */
+
+/* #region RODAPÉ - Estilos associados ao rodapé (foot) */
+/* Implementar estilo(s)*/
+/* #endregion RODAPÉ - Fim */
