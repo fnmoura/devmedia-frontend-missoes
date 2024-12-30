@@ -1,11 +1,34 @@
+/* #region TESTES - Estilos para testes no desenvolvimento */
+.border-red-teste {
+    border: 1px solid red;
+}
+
+.bgc-pink-teste {
+    background-color: pink;
+}
+
+.bgc-purple-teste {
+    background-color: purple;
+}
+
+/* #endregion TESTE DE LAYOUT - Fim */
+
 /* Zerando e padronizando alguns valores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* #region ESTILOS GERAIS - Estilos gerais para vários elementos da página */
+a {
+    text-decoration: none;
 }
 
 /* #region PALETA DE CORES - Estilos relacionados com a paleta de cores do projeto */
+
+/* #region BACKGROUP */
 .bgc-000 {
     background-color: #000;
 }
@@ -14,17 +37,52 @@
     background-color: #2f86d6;
 }
 
-/* #endregion ESTILOS GERAIS - Fim */
-
-/* #region ESTILOS GERAIS - Estilos gerais para vários elementos da página */
-body {
-    font-family: Poppins;
+.bgc-fff {
+    background-color: #fff;
 }
 
-a {
-    text-decoration: none;
+.bgc-gray {
+    background-color: #f5f5f5;
 }
 
+/* #endregion BACKGORUD - Fim */
+
+/* #region TEXT COLOR - Estilos relacionados com as cores dos textos */
+.tc-fff {
+    color: #fff;
+}
+
+.tc-2f86d6 {
+    color: #2f86d6;
+}
+
+.tc-233032 {
+    color: #233032;
+}
+
+/* #endregion TEXT COLOR - Fim */
+
+/* #endregion PALETA DE CORES - Fim */
+
+/* #region TEXT ALIGN - Estilos relacionados com o alinhamento de textos */
+.ta-center {
+    text-align: center;
+}
+
+/* #endregion TEXT ALIGN - Fim */
+
+/* #region FONTES - Estilos relacionados com fontes */
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+/* #endregion FONTES - Fim */
+
+/* #region DISPLAY FLEX - Estilos relacionados com o Display Flex */
 .conteiner-width {
     max-width: 1024px;
     width: 100%;
@@ -34,38 +92,58 @@ a {
 .df-row {
     display: flex;
     flex-direction: row;
-    border: green 3px solid;
 }
 
 .df-col {
     display: flex;
     flex-direction: column;
-    border: red 3px solid;
 }
 
 .jc-sb {
     justify-content: space-between;
 }
 
+.jc-center {
+    justify-content: center;
+}
+
 .ai-c {
     align-items: center;
 }
 
-.texto-centralizado {
-    text-align: center;
+/* #endregion DISPLAY FLEX - Fim */
+
+/* #region PADDINGS E MARGENS - Estilos comuns relacionados com margens e paddings */
+.p-tb-8 {
+    padding: 8px 0;
 }
 
+.p-tb-16 {
+    padding: 16px 0px;
+}
+
+.p-tb-40 {
+    padding: 40px 0px;
+}
+
+.p-rl-8 {
+    padding: 0 8px;
+}
+
+.p-rl-16 {
+    padding: 0 16px;
+}
+
+.p-rl-32 {
+    padding: 0 32px;
+}
+
+/* #endregion PADDINGS E MARGENS - Fim*/
 /* #endregion ESTILOS GERAIS - Fim*/
 
 /* #region CABEÇALHO - Estilos para o cabeçalho (head) */
-header {
-    background-color: #fff;
-}
 
 /* #region MARCA - Conjunto de estilos relacionados com a marca no cabeçalho */
-.marca-conteiner {
-    padding: 16px 0px;
-}
 
 .marca-figurativa {
     width: 80px;
@@ -78,34 +156,24 @@ header {
 
 .marca-textual p:first-of-type {
     font-size: 1.5rem;
-    font-weight: bold;
     color: #000;
 }
 
 /* #endregion MARCA - Fim */
+
 /* #region MENU SUPERIOR - Conjunto de estilos relacionados com o menu superior para telas grandes. */
 nav a {
     margin-left: 16px;
+    color: #233032;
+    font-weight: 600;
 }
 
 /* #endregion MENU SUPERIOR - Fim */
-
 /* #endregion CABEÇALHO - Fim */
 
 /* #region CONTEÚDO PRINCIPAL - Estilos para o conteúdo principal (main) da página */
-main {
-    background-color: #fff;
-}
 
 /* #region BANNER - Estilos Usados no banner */
-#banner {
-    background-color: #2f86d6;
-}
-
-.banner-conteiner {
-    padding: 16px 0px;
-}
-
 .banner-texto {
     width: 470px;
     color: #fff;
@@ -119,18 +187,16 @@ main {
     width: 100%;
 }
 
+.banner-titulo {
+    font-size: 28px;
+}
+
 /* #endregion BANNER - Fim */
 
 /* #region ANÚNCIOS - Conjunto de Estilos usados nos anúncios 01 e 02 */
 /* #region ANÚNCIOS - Estilos comuns para os anúncio 01 e anúncio 02 */
-.anuncio-conteiner {
-    max-width: 1024px;
-    width: 100%;
-    margin: auto;
-}
 
 #anuncio01, #anuncio02 {
-    padding: 40px 0px;
     color: #fff;
 }
 
@@ -145,37 +211,17 @@ main {
 }
 
 /* #endregion ANÚNCIO 01 e 02 - Fim */
-/* #region ANÚNCIO 01 - Estilos Específicos para o Anúncio 01 */
-.anuncio01-texto p:first-of-type {
-    font-weight: bold;
-}
-
-#anuncio01 a {
-    background-color: #2f86d6;
-}
-
-/* #endregion ANÚNCIO 01 - Fim */
-/* #region ANÚNCIO 02 - Estilos Específicos para o Anúncio 02 */
-#anuncio02 a {
-    background-color: #000;
-}
-
-/* #endregion ANÚNCIO 02 - Fim */
 /* #endregion ANÚNCIOS - Fim */
 
 /* #region INFORMAÇÕES - Estilos associados com as informações */
-#informacoes {
+#informacoes-texto {
+    max-width: 900px;
     width: 100%;
-    padding: 100px 0px;
 }
 
-#informacoes .texto {
-    width: 900px;
-    padding: 16px 0px;
-}
-
-.grupo-card {
-    padding: 16px 0px;
+.informacoes-titulo {
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .card {
@@ -183,21 +229,28 @@ main {
 }
 
 .card img {
-    width: 80%;
+    width: 52%;
+    padding: 16px 0px;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0px 0px 8px 0px;
+}
+
+.card p {
+    font-size: 16px;
+    padding: 0px 0px 8px 0px;
 }
 
 /* #endregion INFORMAÇÕES - Fim */
 
 /* #region PLANOS - Estilos associados aos planos */
-#planos {
-    width: 100%;
-    padding: 100px 0px;
+/* Implementar */
+#planos img {
+    max-width: 100%;
 }
 
 /* #endregion PLANOS - Fim*/
-
 /* #endregion MAIN - Fim */
-
-/* #region RODAPÉ - Estilos associados ao rodapé (foot) */
-/* Implementar estilo(s)*/
-/* #endregion RODAPÉ - Fim */
