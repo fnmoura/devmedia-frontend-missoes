@@ -1,0 +1,204 @@
+/* Zerando e padronizando alguns valores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* #region ESTILOS GERAIS - Estilos gerais para vários elementos da página */
+a {
+    text-decoration: none;
+}
+
+/* #region PALETA DE CORES - Estilos relacionados com a paleta de cores do projeto */
+/* #region BACKGROUP */
+.bgc-000 {
+    background-color: #000;
+}
+
+.bgc-2f86d6 {
+    background-color: #2f86d6;
+}
+
+.bgc-fff {
+    background-color: #fff;
+}
+
+.bgc-gray {
+    background-color: #f5f5f5;
+}
+
+/* #endregion BACKGORUD - Fim */
+/* #region TEXT COLOR - Estilos relacionados com as cores dos textos */
+.tc-fff {
+    color: #fff;
+}
+
+.tc-2f86d6 {
+    color: #2f86d6;
+}
+
+.tc-233032 {
+    color: #233032;
+}
+
+/* #endregion TEXT COLOR - Fim */
+/* #endregion PALETA DE CORES - Fim */
+/* #region TEXT ALIGN - Estilos relacionados com o alinhamento de textos */
+.ta-center {
+    text-align: center;
+}
+
+/* #endregion TEXT ALIGN - Fim */
+/* #region FONTES - Estilos relacionados com fontes */
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+/* #endregion FONTES - Fim */
+/* #region DISPLAY FLEX - Estilos relacionados com o Display Flex */
+.conteiner-width {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+.df-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.df-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+/* #endregion DISPLAY FLEX - Fim */
+/* #region PADDINGS E MARGENS - Estilos comuns relacionados com margens e paddings */
+.p-tb-8 {
+    padding: 8px 0;
+}
+
+.p-tb-16 {
+    padding: 16px 0px;
+}
+
+.p-tb-40 {
+    padding: 40px 0px;
+}
+
+.p-rl-8 {
+    padding: 0 8px;
+}
+
+.p-rl-16 {
+    padding: 0 16px;
+}
+
+.p-rl-32 {
+    padding: 0 32px;
+}
+
+/* #endregion PADDINGS E MARGENS - Fim*/
+/* #endregion ESTILOS GERAIS - Fim*/
+
+/* #region CABEÇALHO - Estilos para o cabeçalho (head) */
+/* #region MARCA - Conjunto de estilos relacionados com a marca no cabeçalho */
+
+.marca-figurativa {
+    width: 80px;
+    padding: 0 8px 0 0;
+}
+
+.marca-textual {
+    color: #ffffff;
+}
+
+.marca-textual p:first-of-type {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+/* #endregion MARCA - Fim */
+/* #region MENU SUPERIOR - Conjunto de estilos relacionados com o menu superior para telas grandes. */
+nav a {
+    margin-left: 16px;
+    color: #233032;
+    font-weight: 600;
+}
+
+/* #endregion MENU SUPERIOR - Fim */
+/* #endregion CABEÇALHO - Fim */
+
+/* #region CONTEÚDO PRINCIPAL - Estilos para o conteúdo principal (main) da página */
+/* #region TABELA DE PREÇOS - Estilos associados aos planos */
+#tabela-precos table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: center;
+}
+
+#tabela-precos table, #tabela-precos th, #tabela-precos td {
+    border: 1px solid #f1f3f7;
+    padding: 8px 0px;
+    vertical-align: middle;
+}
+
+#tabela-precos thead>tr {
+    background-color: #f6f6f6;
+    border: 1px solid #fff;
+    font-size: 18px;
+}
+
+#tabela-precos thead th, #tabela-precos tbody td:first-of-type {
+    border: 1px solid #fff;
+}
+
+#tabela-precos th:first-of-type {
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+}
+
+th span {
+    font-size: 12px;
+    color: #a89f9f;
+}
+
+#tabela-precos td:first-of-type {
+    text-align: left;
+    background-color: #f6f6f6;
+    font-weight: 600;
+    padding: 8px 32px;
+}
+
+td.circle::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2f86d6;
+    border-radius: 50%;
+}
+
+/* #endregion TABELA DO PREÇOS - Fim*/
+/* #endregion CONTEÚDO PRINCIPAL - Fim */
