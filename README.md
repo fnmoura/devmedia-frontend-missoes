@@ -4,5 +4,5 @@ Este repositório contém todos os projetos de aprendizado das missões da DevMe
 
 ## Missões
 
-1. [Missão 08](./Missao08)
+1. [Missão 08 - Website de uma cafeteria](./Missao08)
 2. [Missão 09 - Website para provedor de hospedagem](./Missao09/src)
