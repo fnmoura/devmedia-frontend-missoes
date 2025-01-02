@@ -1,18 +1,3 @@
-/* #region TESTES - Estilos para testes no desenvolvimento */
-.border-red-teste {
-    border: 1px solid red;
-}
-
-.bgc-pink-teste {
-    background-color: pink;
-}
-
-.bgc-purple-teste {
-    background-color: purple;
-}
-
-/* #endregion TESTE DE LAYOUT - Fim */
-
 /* Zerando e padronizando alguns valores */
 * {
     margin: 0;
@@ -172,7 +157,6 @@ nav a {
 /* #endregion CABEÇALHO - Fim */
 
 /* #region CONTEÚDO PRINCIPAL - Estilos para o conteúdo principal (main) da página */
-
 /* #region BANNER - Estilos Usados no banner */
 .banner-texto {
     width: 470px;
@@ -192,7 +176,6 @@ nav a {
 }
 
 /* #endregion BANNER - Fim */
-
 /* #region ANÚNCIOS - Conjunto de Estilos usados nos anúncios 01 e 02 */
 /* #region ANÚNCIOS - Estilos comuns para os anúncio 01 e anúncio 02 */
 
@@ -212,7 +195,6 @@ nav a {
 
 /* #endregion ANÚNCIO 01 e 02 - Fim */
 /* #endregion ANÚNCIOS - Fim */
-
 /* #region INFORMAÇÕES - Estilos associados com as informações */
 #informacoes-texto {
     max-width: 900px;
@@ -245,9 +227,7 @@ nav a {
 }
 
 /* #endregion INFORMAÇÕES - Fim */
-
 /* #region PLANOS - Estilos associados aos planos */
-/* Implementar */
 #planos h2 {
     font-size: 32px;
     padding: 16px 0px;
@@ -289,4 +269,4 @@ nav a {
 
 
 /* #endregion PLANOS - Fim*/
-/* #endregion MAIN - Fim */
+/* #endregion CONTEÚDO PRINCIPAL - Fim */

@@ -1,18 +1,3 @@
-/* #region TESTES - Estilos para testes no desenvolvimento */
-.border-red-teste {
-    border: 1px solid red;
-}
-
-.bgc-pink-teste {
-    background-color: pink;
-}
-
-.bgc-purple-teste {
-    background-color: purple;
-}
-
-/* #endregion TESTE DE LAYOUT - Fim */
-
 /* Zerando e padronizando alguns valores */
 * {
     margin: 0;
@@ -27,7 +12,6 @@ a {
 }
 
 /* #region PALETA DE CORES - Estilos relacionados com a paleta de cores do projeto */
-
 /* #region BACKGROUP */
 .bgc-000 {
     background-color: #000;
@@ -46,7 +30,6 @@ a {
 }
 
 /* #endregion BACKGORUD - Fim */
-
 /* #region TEXT COLOR - Estilos relacionados com as cores dos textos */
 .tc-fff {
     color: #fff;
@@ -61,16 +44,13 @@ a {
 }
 
 /* #endregion TEXT COLOR - Fim */
-
 /* #endregion PALETA DE CORES - Fim */
-
 /* #region TEXT ALIGN - Estilos relacionados com o alinhamento de textos */
 .ta-center {
     text-align: center;
 }
 
 /* #endregion TEXT ALIGN - Fim */
-
 /* #region FONTES - Estilos relacionados com fontes */
 .fw-600 {
     font-weight: 600;
@@ -81,7 +61,6 @@ a {
 }
 
 /* #endregion FONTES - Fim */
-
 /* #region DISPLAY FLEX - Estilos relacionados com o Display Flex */
 .conteiner-width {
     max-width: 1024px;
@@ -112,7 +91,6 @@ a {
 }
 
 /* #endregion DISPLAY FLEX - Fim */
-
 /* #region PADDINGS E MARGENS - Estilos comuns relacionados com margens e paddings */
 .p-tb-8 {
     padding: 8px 0;
@@ -142,7 +120,6 @@ a {
 /* #endregion ESTILOS GERAIS - Fim*/
 
 /* #region CABEÇALHO - Estilos para o cabeçalho (head) */
-
 /* #region MARCA - Conjunto de estilos relacionados com a marca no cabeçalho */
 
 .marca-figurativa {
@@ -151,16 +128,16 @@ a {
 }
 
 .marca-textual {
-    color: #2f86d6;
+    color: #ffffff;
 }
 
 .marca-textual p:first-of-type {
     font-size: 1.5rem;
     color: #000;
+    font-weight: 600;
 }
 
 /* #endregion MARCA - Fim */
-
 /* #region MENU SUPERIOR - Conjunto de estilos relacionados com o menu superior para telas grandes. */
 nav a {
     margin-left: 16px;
@@ -172,121 +149,56 @@ nav a {
 /* #endregion CABEÇALHO - Fim */
 
 /* #region CONTEÚDO PRINCIPAL - Estilos para o conteúdo principal (main) da página */
-
-/* #region BANNER - Estilos Usados no banner */
-.banner-texto {
-    width: 470px;
-    color: #fff;
-}
-
-.banner-figure {
-    width: 50%;
-}
-
-.banner-figure img {
+/* #region TABELA DE PREÇOS - Estilos associados aos planos */
+#tabela-precos table {
     width: 100%;
-}
-
-.banner-titulo {
-    font-size: 28px;
-}
-
-/* #endregion BANNER - Fim */
-
-/* #region ANÚNCIOS - Conjunto de Estilos usados nos anúncios 01 e 02 */
-/* #region ANÚNCIOS - Estilos comuns para os anúncio 01 e anúncio 02 */
-
-#anuncio01, #anuncio02 {
-    color: #fff;
-}
-
-.anuncio01-texto, .anuncio02-texto {
-    width: 600px;
-    text-align: left;
-}
-
-#anuncio01 a, #anuncio02 a {
-    color: #fff;
-    padding: 8px 32px;
-}
-
-/* #endregion ANÚNCIO 01 e 02 - Fim */
-/* #endregion ANÚNCIOS - Fim */
-
-/* #region INFORMAÇÕES - Estilos associados com as informações */
-#informacoes-texto {
-    max-width: 900px;
-    width: 100%;
-}
-
-.informacoes-titulo {
-    font-size: 32px;
-    font-weight: 800;
-}
-
-.card {
-    width: 32%;
-}
-
-.card img {
-    width: 52%;
-    padding: 16px 0px;
-}
-
-.card h4 {
-    font-size: 18px;
-    font-weight: 800;
-    padding: 0px 0px 8px 0px;
-}
-
-.card p {
-    font-size: 16px;
-    padding: 0px 0px 8px 0px;
-}
-
-/* #endregion INFORMAÇÕES - Fim */
-
-/* #region PLANOS - Estilos associados aos planos */
-/* Implementar */
-#planos h2 {
-    font-size: 32px;
-    padding: 16px 0px;
-}
-
-#planos img {
-    width: 50%;
-}
-
-.planos-tabela {
-    margin: 16px 0px;
-    box-shadow: 0px 0px 16px 4px #2f86d6;
-}
-
-.planos-tabela table {
-    border: 1px solid #a89f9f;
-    text-align: center;
     border-collapse: collapse;
+    font-size: 12px;
+    text-align: center;
 }
 
-.planos-tabela th, .planos-tabela td {
-    padding: 8px 8px;
-    vertical-align: top;
-    border: 1px solid #a89f9f;
+#tabela-precos table, #tabela-precos th, #tabela-precos td {
+    border: 1px solid #f1f3f7;
+    padding: 8px 0px;
+    vertical-align: middle;
 }
 
-.planos-tabela th p {
-    font-size: 13px;
+#tabela-precos thead>tr {
+    background-color: #f6f6f6;
+    border: 1px solid #fff;
+    font-size: 18px;
+}
+
+#tabela-precos thead th, #tabela-precos tbody td:first-of-type {
+    border: 1px solid #fff;
+}
+
+#tabela-precos th:first-of-type {
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+}
+
+th span {
+    font-size: 12px;
     color: #a89f9f;
 }
 
-.planos-tabela tbody tr:nth-child(odd) {
+#tabela-precos td:first-of-type {
+    text-align: left;
     background-color: #f6f6f6;
+    font-weight: 600;
+    padding: 8px 32px;
 }
 
-.planos-tabela tbody tr:nth-child(even) {
-    background-color: #f1f3f7;
+td.circle::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2f86d6;
+    border-radius: 50%;
 }
 
-
-/* #endregion PLANOS - Fim*/
-/* #endregion MAIN - Fim */
+/* #endregion TABELA DO PREÇOS - Fim*/
+/* #endregion CONTEÚDO PRINCIPAL - Fim */
