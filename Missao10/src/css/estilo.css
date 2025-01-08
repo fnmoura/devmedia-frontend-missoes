@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilos GLOBAIS */
+.container{
+    width: 100%;
+
+    display: flex;
+
+    padding: 10px 15px;
+    /* box-sizing: border-box; */
+}
+
+.limita-largura-container{
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+section{
+    padding: 24px 20px 12px 20px;
+}
+
+
+/* Estilos do CABEÇALHO (TOPO + CAPA) */
+header img{
+    width: 150px;
+}
+
+header nav{
+    font-size: 18px;
+}
+
+header a{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    /* box-sizing: border-box; */
+}
+
+
+.topo{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.secao-capa{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    background-image: url("../img/bg-estacao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-capa::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.capa{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    
+    padding: 60px 20px;
+
+    z-index: 1;
+}
+
+.secao-capa h1{
+    font-size: 80px;
+}
+
+.secao-capa h2{
+    font-size: 35px;
+}
+
+.secao-capa h1, .secao-capa h2{
+    margin: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+
+/* ESTILOS DA SEÇÃO SOBRE */
+.secao-sobre{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.secao-sobre h3{
+    font-size: 32px;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.secao-sobre figure{
+    width: 100%;
+}
+
+.secao-sobre img{
+    width: 100%;
+}
+
+.secao-sobre p{
+    margin-bottom: 16px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.secao-sobre p::first-letter{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*  */
+/* ESTILOS DA SEÇÃO PONTOS TURÍSTICOS */
+/*  */
+.secao-pontos-turisticos{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: #e9e9e9;
+}
+
+.secao-pontos-turisticos h3{
+    font-size: 32px;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.secao-pontos-turisticos figure, .secao-pontos-turisticos img{
+    width: 100%;
+}
+
+.secao-pontos-turisticos p{
+    line-height: 32px;
+}
+
+.secao-pontos-turisticos p::first-letter{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.secao-pontos-turisticos ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.secao-pontos-turisticos li{
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0px 0px 0px;
+}
+
+.secao-pontos-turisticos li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/seta.png");
+    margin: 0px 6px 0px 0px;
+}
+
+/*  */
+/* ESTILOS DA SEÇÃO GALERIA */
+/*  */
+.secao-galeria{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.secao-galeria h3{
+    font-size: 32px;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.secao-galeria p{
+    line-height: 32px;
+}
+
+.secao-galeria p::first-letter{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.galeria-de-fotos{
+    width: 100%;
+}
+
+.secao-galeria figure{
+    width: calc((100% / 3) - 3px);
+    display: inline-block;
+}
+
+.secao-galeria img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.secao-galeria figure, .secao-galeria img:hover{
+    opacity: 1;
+}
+
+/*  */
+/* ESTILOS DO RODAPÉ */
+/*  */
+
+footer{
+    width: 100%;
+    margin: 25px 0px 0px 0px;
+    background-color: #f5c002;
+}
+
+footer p{
+    text-align: center;
+    width: 100%;
+}
