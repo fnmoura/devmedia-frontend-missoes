@@ -56,7 +56,10 @@ As alterações realizadas foram:
 
 # Missão 10 - Contruir um Website para uma Pousada
 ## Tarefas
-### Task 01 - Adequações Iniciais
+### Task 01 - Adequações Iniciais e Construção do HTML
+- Arquivos de imagens e ícones copiados para o projeto.
+- Arquivo do "layout pronto" e "textos do site" disponibilizados na pasta docs.
+- Criação do arquivo html usando tags semânticas.
+- Alteração do layout do projeto no que se refere ao sequenciamento de algumas sessões.
+- Alteração das opções do menu e alteração no ordem de exibição delas.
 - Atualização do arquivo "PassosMissoes.md".
-- Inclusão de ícone na aba da janela do navegador para a página index.html.
-- Inclusão do arquivo "favicon.png".
