@@ -53,3 +53,10 @@ As alterações realizadas foram:
 - Adequação do arquivo "index.html" no que se refere a formatação da tabela.
 - Criação de uma região no arquivo "tabela-precos.css" específica para a formatação da tabela.
 - Inclusão da imagem do "foguete" no botão "Tabela de Preços" a partir do Font Awesome.
+
+# Missão 10 - Contruir um Website para uma Pousada
+## Tarefas
+### Task 01 - Adequações Iniciais
+- Atualização do arquivo "PassosMissoes.md".
+- Inclusão de ícone na aba da janela do navegador para a página index.html.
+- Inclusão do arquivo "favicon.png".
