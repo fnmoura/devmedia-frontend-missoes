@@ -37,3 +37,13 @@
 - [x] Correção realizada no arquivo "index.html" porque não estava sendo exibido o "favicon.png" na barra de títulos do browser.
 - [x] Atualização deste arquivo de passos.
 - [x] Commit local e remoto das atualizações do projeto.
+
+### Task 04 - Inclusão de conteúdo e ajustes da estrutura do html da página de quartos
+- [x] Criação do cabeçalho;
+- [x] Criação do conteúdo;
+- [x] Criação do rodapé;
+- [x] Ajustes dos links de navegação entre as páginas "index.html" e "quartos.html";
+
+#### Ações diversas
+- [x] Atualização deste arquivo de passos;
+- [x] Commit local e remoto das atualizações do projeto.
