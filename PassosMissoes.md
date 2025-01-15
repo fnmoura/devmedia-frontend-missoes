@@ -63,3 +63,16 @@ As alterações realizadas foram:
 - Alteração do layout do projeto no que se refere ao sequenciamento de algumas sessões.
 - Alteração das opções do menu e alteração no ordem de exibição delas.
 - Atualização do arquivo "PassosMissoes.md".
+
+### Task 02 - Estilização da Página principal
+- Criar o CSS (index.css) da página principal (index.html).
+- Ajustar todas as seções:
+    - Topo, com o logotipo e menu de navegação;
+    - Conteúdo:
+        - Apresentação;
+        - Apresentação dos quartos;
+        - Sobre;
+        - Localização e Rotas;
+        - Contato.
+    - Rodapé.
+- Atualização do arquivo "PassosMissoes.md".
