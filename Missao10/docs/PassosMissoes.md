@@ -47,3 +47,10 @@
 #### Ações diversas
 - [x] Atualização deste arquivo de passos;
 - [x] Commit local e remoto das atualizações do projeto.
+
+### Task 05 - ?????
+- [ ] ???;
+
+#### Ações diversas
+- [ ] Atualização deste arquivo de passos;
+- [ ] Commit local e remoto das atualizações do projeto.

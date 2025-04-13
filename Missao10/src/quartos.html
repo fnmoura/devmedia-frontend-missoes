@@ -16,11 +16,9 @@
 
 <body>
     <header id="cabecalho">
-        <div class="container">
-            <div>
-                <a id="link-logo-topo" href="index.html">Pousada <span>Secreta</span></a>
-            </div>
-            <nav id="menu-topo">
+        <div class="container-geral container-flex">
+            <a id="link-logo-topo" href="index.html">Pousada <span>Secreta</span></a>
+            <nav id="container-menu-topo" class="container-flex">
                 <a href="index.html#apresentacao">APRESENTAÇÃO</a>
                 <a href="index.html#sobre">SOBRE</a>
                 <a href="#">QUARTOS</a>
@@ -31,24 +29,24 @@
     </header>
 
     <main id="conteudo">
-        <div class="container">
-            <section class="banner">
+        <div class=container-geral>
+            <section class="container-banner">
                 <p>Exibe a imagem de fundo da vista aérea da ilha</p>
             </section>
 
-            <section id="quartos-solteiro" class="">
-                <div>
+            <section id="quartos-solteiro" class="quartos">
+                <div class="container-apresentacao-quartos">
                     <h2>QUARTOS DE SOLTEIRO</h2>
                     <p>Conheça os nossos quartos de solteiro.</p>
                 </div>
-                <div>
+                <div class="container-flex">
                     <img src="./assets/quarto-solteiro1.jpg" alt="Quarto de solteiro 1">
                     <img src="./assets/quarto-solteiro2.jpg" alt="Quarto de solteiro 2">
                     <img src="./assets/quarto-solteiro3.jpg" alt="Quarto de solteiro 3">
                 </div>
-                <div>
+                <div class="container-informacao-quartos">
                     <h3>Informações sobre o quarto</h3>
-                    <ul>
+                    <ul class="container-flex container-lista">
                         <li>TV de tela plana a cabo.</li>
                         <li>Cozinha compacta.</li>
                         <li>Área para refeições.</li>
@@ -59,19 +57,19 @@
                 </div>
             </section>
 
-            <section id="quartos-casal" class="">
-                <div>
+            <section id="quartos-casal" class="quartos">
+                <div class="container-apresentacao-quartos">
                     <h2>QUARTOS DE CASAL</h2>
                     <p>Conheça os nossos quartos de casal.</p>
                 </div>
-                <div>
+                <div class="container-flex">
                     <img src="./assets/quarto-casal1.jpg" alt="Quarto de casal 1">
                     <img src="./assets/quarto-casal2.jpg" alt="Quarto de casal 2">
                     <img src="./assets/quarto-casal3.jpg" alt="Quarto de casal 3">
                 </div>
-                <div>
+                <div class="container-informacao-quartos">
                     <h3>Informações sobre o quarto</h3>
-                    <ul>
+                    <ul class="container-flex container-lista">
                         <li>TV de tela plana a cabo.</li>
                         <li>Cozinha compacta.</li>
                         <li>Área para refeições.</li>
@@ -82,19 +80,19 @@
                 </div>
             </section>
 
-            <section id="quartos-familia" class="">
-                <div>
+            <section id="quartos-familia" class="quartos">
+                <div class="container-apresentacao-quartos">
                     <h2>QUARTOS DE FAMÍLIA</h2>
                     <p>Conheça os nossos quartos família.</p>
                 </div>
-                <div>
+                <div class="container-flex">
                     <img src="./assets/quarto-familia1.jpg" alt="Quarto de família 1">
                     <img src="./assets/quarto-familia2.jpg" alt="Quarto de família 2">
                     <img src="./assets/quarto-familia3.jpg" alt="Quarto de família 3">
                 </div>
-                <div>
+                <div class="container-informacao-quartos">
                     <h3>Informações sobre o quarto</h3>
-                    <ul>
+                    <ul class="container-flex container-lista">
                         <li>TV de tela plana a cabo.</li>
                         <li>Cozinha compacta.</li>
                         <li>Área para refeições.</li>
@@ -108,8 +106,8 @@
     </main>
 
     <footer id="rodape">
-        <div id="conteiner-rodape">
-            <div class="container-contato">
+        <div id="container-rodape">
+            <div class="container-geral container-contato">
                 <h2>Entre em contato conosco:</h2>
                 <div>
                     <a class="itens-contato" href="https://maps.app.goo.gl/yci7gKvqvaHidMpE9" target="_blank"
@@ -135,7 +133,7 @@
                     </a>
                 </div>
             </div>
-            <div class="container">
+            <div class=container-geral>
                 <p class="texto-copyright">@ copyright - Desenvolvido por <span class="nome-desenvolvedor">Fábio
                         Moura</span></p>
             </div>
