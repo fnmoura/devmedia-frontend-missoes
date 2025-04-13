@@ -1,7 +1,9 @@
 # DevMedia Missões
 
-Este repositório contém todos os projetos de aprendizado das missões da DevMedia.
+Este repositório contém todos os projetos de aprendizado das missões da DevMedia para a Trilha de Conhecimento de Front-End.
 
-## Missões
-
-1. [Missão 08](./missao-08)
+## MÓDULO I - HTML e CSS
+### Missões
+1. [Missão 08 - Website de uma cafeteria](./Missao08)
+2. [Missão 09 - Website para provedor de hospedagem](./Missao09/src)
+3. [Missão 10 - Website para uma Pousada](./Missao10/src)

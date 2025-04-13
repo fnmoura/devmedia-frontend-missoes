@@ -1,0 +1,124 @@
+/* #region ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-geral {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: tomato;
+}
+
+.container-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+/* #endregion */
+
+
+/* #region ESTILOS DO CABEÇALHO */
+.container-cabecalho {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    padding: 16px 0;
+    border: black 3px solid;
+}
+
+#link-logo-topo {
+    font-size: 2em;
+    color: #fff;
+    border: black 3px solid;
+}
+
+#link-logo-topo span {
+    font-weight: 600;
+    color: #6592c9;
+}
+
+/* #endregion */
+
+
+/* #region ESTILOS DO BANNER */
+.container-banner {
+    width: 100%;
+    height: 160px;
+    background-image: url('../assets/img-fundo.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+/* #endregion */
+
+
+/* #region ESTILOS DOS QUARTOS */
+.quartos {
+    text-align: center;
+}
+
+.container-apresentacao-quartos {
+    padding: 8px 0 32px 0;
+    text-align: center;
+    color: #000;
+}
+
+.container-apresentacao-quartos h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 16px 0;
+}
+
+.container-apresentacao-quartos p {
+    font-size: 1.0em;
+}
+
+.quartos img {
+    width: 100%;
+    max-width: 32%;
+    border-radius: 8px;
+}
+
+.container-informacao-quartos h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.container-lista {
+    list-style-position: inside;
+}
+
+
+
+/* #endregion */
+
+
+/* #region ESTILOS DO RODAPÉ */
+
+#container-rodape {
+    color: white;
+    text-align: center;
+}
+
+/* #endregion */
