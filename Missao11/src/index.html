@@ -5,20 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRONT-END - HTML E CSS - LINK BIO NEYMAR JR.</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- Importação de fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-
-    </header>
-
     <main>
-
+        <section id="banner">
+            <video autoplay loop muted src="./video/videoneymar.mp4" type="video/mp4">
+                <track src="./video/subtitles.vtt" kind="subtitles" srclang="pt" label="Português">
+                <track src="./video/description.vtt" kind="descriptions" srclang="pt" label="Descrição em Português">
+            </video>
+            <div class="container-info">
+                <div id="container-foto-titulo">
+                    <img id="foto-perfil" src="./assets/img/neymar.jpg" alt="foto de Neymar Jr" />
+                    <div id="container-titulo">
+                        <h1>Neymar Jr</h1>
+                        <img src="./assets/img/verificado.png" alt="logotipo verificado">
+                    </div>
+                </div>
+                <div id="container-opcoes">
+                    <div class="container-opcao">
+                        <a href="" target="_blank">
+                            <img src="./assets/img/youtube.png" alt="logotipo youtube">
+                            <p>Siga meu canal no YouTube</p>
+                        </a>
+                    </div>
+                    <div class="container-opcao">
+                        <a href="" target="_blank">
+                            <img src="./assets/img/instagram.png" alt="logotipo instagram">
+                            Me siga no Instagram</a>
+                    </div>
+                    <div class="container-opcao">
+                        <a href="" target="_blank">
+                            <img src="./assets/img/twitter.png" alt="logotipo twitter">
+                            Me siga no Twitter</a>
+                    </div>
+                    <div class="container-opcao">
+                        <a href="" target="_blank">
+                            <img src="./assets/img/facebook.png" alt="logotipo facebook">
+                            Me siga no Facebook</a>
+                    </div>
+                    <div class="container-opcao">
+                        <a href="" target="_blank">
+                            <img src="./assets/img/twitch.png" alt="logotipo twitch">
+                            Me siga no Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 
 </html>
