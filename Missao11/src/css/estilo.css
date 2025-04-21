@@ -8,14 +8,24 @@ body {
     background-color: #f0f0f0;
 }
 
-#banner {
+/* Estilos comuns para as seções banner e estatísticas */
+#banner, #estatisticas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+}
+
+.container-info {
+    max-width: 768px;
+    width: 100%;
+}
+
+/* Estilos específicos para a seção banner */
+#banner {
     font-family: 'Ysabeau Infant', sans-serif;
     color: #fff;
-    height: 100vh;
 }
 
 #banner video {
@@ -24,11 +34,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.container-info {
-    max-width: 768px;
-    width: 100%;
 }
 
 #container-foto-titulo {
@@ -80,8 +85,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 40px 0 0 0;
-    gap: 20px;
+    margin: 30px 0 0 0;
+    gap: 10px;
 }
 
 .container-opcao a {
@@ -89,6 +94,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     border-radius: 16px;
     background-color: #02000062;
     text-decoration: none;
@@ -106,4 +112,56 @@ body {
 .container-opcao a img {
     width: 20px;
     height: 20px;
+}
+
+/* Estilos específicos para a seção estatísticas */
+#estatisticas {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    text-align: center;
+    background-image: url("../assets/img/imagem-de-fundo.jpg");
+    background-size: cover;
+}
+
+#estatisticas .container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#estatisticas .container-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#estatisticas .container-info table th, #estatisticas .container-info table td {
+    padding: 20px;
+}
+
+
+table thead tr:nth-child(odd) {
+    background-color: #000000cc;
+}
+
+table tbody tr:nth-child(even) {
+    color: #fff;
+    background-color: #000000aa;
+}
+
+table tbody tr:nth-child(odd) {
+    color: #000;
+    background-color: #ffffffaa;
+}
+
+table tbody td:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+table img {
+    max-width: 30px;
 }
