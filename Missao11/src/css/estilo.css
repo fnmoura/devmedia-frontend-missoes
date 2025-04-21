@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* Estilos comuns para as seções banner e estatísticas */
+#banner, #estatisticas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-info {
+    max-width: 768px;
+    width: 100%;
+}
+
+/* Estilos específicos para a seção banner */
+#banner {
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #fff;
+}
+
+#banner video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#container-foto-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ffdf00, #009c3b);
+    padding: 5px;
+}
+
+#container-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#container-titulo img {
+    width: 20px;
+}
+
+#container-titulo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 3px 3px 2px #000000;
+}
+
+#container-titulo h1::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 5px;
+    width: 44px;
+    height: 4px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+}
+
+#container-opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 0 0 0;
+    gap: 10px;
+}
+
+.container-opcao a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: #02000062;
+    text-decoration: none;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container-opcao a:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.container-opcao a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos específicos para a seção estatísticas */
+#estatisticas {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    text-align: center;
+    background-image: url("../assets/img/imagem-de-fundo.jpg");
+    background-size: cover;
+}
+
+#estatisticas .container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#estatisticas .container-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#estatisticas .container-info table th, #estatisticas .container-info table td {
+    padding: 20px;
+}
+
+
+table thead tr:nth-child(odd) {
+    background-color: #000000cc;
+}
+
+table tbody tr:nth-child(even) {
+    color: #fff;
+    background-color: #000000aa;
+}
+
+table tbody tr:nth-child(odd) {
+    color: #000;
+    background-color: #ffffffaa;
+}
+
+table tbody td:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+table img {
+    max-width: 30px;
+}
