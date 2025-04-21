@@ -4,7 +4,8 @@ name: Deploy de Conteúdo Estático para o GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["development"]
+    # branches: ["development"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
