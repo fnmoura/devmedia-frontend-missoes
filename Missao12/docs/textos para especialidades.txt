@@ -51,7 +51,7 @@ Fisioterapia é uma ciência da saúde aplicada ao estudo, diagnóstico, preven�
 
 Dias	Horários	Médico(a)
 Segunda e quinta	11:00 às 20:00	Dr. Alberto de Paula
-Segunda e quartas	08:00 às 15:00	Dra. Maria Fernades
+Segunda e quartas	08:00 às 15:00	Dra. Maria Fernandes
 Terça e sexta	14:00 às 21:00	Dra. Elaine Peixoto
 Terça e quinta	08:00 às 14:00	Dra. Elaine Peixoto
 Quarta e Sábado	8:00 às 21:00	Dra. Bianca Rocha
