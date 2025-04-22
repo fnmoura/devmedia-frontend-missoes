@@ -23,8 +23,7 @@ Pediatria
 A pediatria é a especialidade médica dedicada à assistência à criança e ao adolescente, nos seus diversos aspectos, sejam eles preventivos ou curativos.
 
 Dias	Horários	Médico(a)
-Segunda e quartas	8:00 às 15:00	Dra. Elaine pinheiro
-Terça, Quinta e Sexta	13:00 às 21:00	Dr. Anderson Ramos
+Segunda e quartas	8:00 às 15:00	Dra. Elaine Pinheiro
 Sábado	8:00 às 12:00	Dra. Manoela Foster
 
 
