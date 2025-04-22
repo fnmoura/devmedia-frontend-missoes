@@ -1,0 +1,4 @@
+Página dos Direitos Autorais
+   - [ ] Projeto DevMedia - Formação Front-end - HTML e CSS - Missão 12
+   - [ ] Imagem do Favicon
+      - (<a href="https://br.freepik.com/vetores-gratis/hospital-logo-design-vector-medical-cross_18246203.htm">Imagem de rawpixel.com no Freepik</a>)
