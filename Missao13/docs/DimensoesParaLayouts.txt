@@ -1,0 +1,4 @@
+A proposta deste projeto é ser responsivo para as seguintes dimensões:
+   - Resoluções até 425px;
+   - Resoluções até 768px;
+   - Resoluções acima de 768px.
