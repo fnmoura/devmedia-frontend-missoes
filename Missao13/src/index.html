@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <meta name="description" content="A Agência de Viagens encontra o hotel certo para você.">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <title>AGÊNCIA DE VIAGENS - Portal</title>
@@ -26,30 +26,30 @@
                 <h3>Informe seus dados</h3>
                 <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
                     <div>
-                        <label for="">Nome</label>
+                        <label for="id_nome">Nome</label>
                         <input type="text" name="nome" id="id_nome" placeholder="Nome completo">
                     </div>
                     <div>
-                        <label for="">Email</label>
+                        <label for="id_email">Email</label>
                         <input type="email" name="email" id="id_email" placeholder="E-mail para contato">
                     </div>
                     <div>
-                        <label for="">Celular</label>
-                        <input type="tel" name="telefone" id="id_telefone" placeholder="(xx) xxxxx-xxxx">
+                        <label for="id_celular">Celular</label>
+                        <input type="tel" name="celular" id="id_celular" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}">
                     </div>
                     <div>
                         <div>
-                            <label for="">Data da ida</label>
-                            <input type="date" name="data-ida" id="id_data_ida">
+                            <label for="id_partida">Data da ida</label>
+                            <input type="date" name="partida" id="id_partida">
                         </div>
                         <div>
-                            <label for="">Data da volta</label>
-                            <input type="date" name="data-volta" id="id_data_volta">
+                            <label for="id_chegada">Data da volta</label>
+                            <input type="date" name="chegada" id="id_chegada">
                         </div>
                     </div>
                     <div>
                         <div>
-                            <label for="">Origem</label>
+                            <label for="id_origem">Origem</label>
                             <select name="origem" id="id_origem" required>
                                 <option value="">Selecione a origem...</option>
                                 <optgroup label="América do Sul">
@@ -60,7 +60,7 @@
                             </select>
                         </div>
                         <div>
-                            <label for="">Destino</label>
+                            <label for="id_destino">Destino</label>
                             <select name="destino" id="id_destino" required>
                                 <option value="">Selecione o destino...</option>
                                 <optgroup label="América do Sul">
@@ -74,31 +74,31 @@
                     <div>
                         <p>Quarto com cama infantil?</p>
                         <div>
-                            <input type="radio" name="sim" id="id_sim">
-                            <label for="">Sim</label>
+                            <input type="radio" name="infantil" id="id_sim">
+                            <label for="id_sim">Sim</label>
                         </div>
                         <div>
-                            <input type="radio" name="nao" id="id_nao">
-                            <label for="">Não</label>
+                            <input type="radio" name="infantil" id="id_nao">
+                            <label for="id_nao">Não</label>
                         </div>
                     </div>
                     <div>
                         <p>Preferências da hospedagem</p>
                         <div>
-                            <input type="checkbox" name="PISCINA" id="id_piscina">
-                            <label for="">Piscina</label>
+                            <input type="checkbox" name="preferencias[]" id="id_piscina" value="Piscina">
+                            <label for="id_piscina">Piscina</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="WI-FI" id="id_wifi">
-                            <label for="">Wi-Fi</label>
+                            <input type="checkbox" name="preferencias[]" id="id_wifi" value="Wi-Fi">
+                            <label for="id_wifi">Wi-Fi</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="GARAGEM" id="id_garagem">
-                            <label for="">Garagem</label>
+                            <input type="checkbox" name="preferencias[]" id="id_garagem" value="Garagem">
+                            <label for="id_garagem">Garagem</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="SUITE" id="id_suite">
-                            <label for="">Suite</label>
+                            <input type="checkbox" name="preferencias[]" id="id_suite" value="Suite">
+                            <label for="id_suite">Suite</label>
                         </div>
                     </div>
                     <button type="submit">Solicitar orçamento</button>
