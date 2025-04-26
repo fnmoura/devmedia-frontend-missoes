@@ -1,18 +1,21 @@
-# Módulo 12 - Website para uma clínica médica
+# Módulo 13 - Website dinâmico para uma agência de viagens
 
 ## URLs
-   - [X] Página do projeto: https://fnmoura.github.io/devmedia-frontend-missoes/Missao12/src
+   - [X] Página do projeto: https://fnmoura.github.io/devmedia-frontend-missoes/Missao13/src
    - [X] Repositório do projeto: https://github.com/fnmoura/devmedia-frontend-missoes
 
 
 ## Objetivo
-A proposta desse projeto é criar uma página web responsiva utilizando as tecnologias HTML e CSS. Dessa forma foi possível colocar em prática os seguintes conceitos:
+A proposta desse projeto é criar uma página web dinâmica utilizando formulários para enviar dados do front-end para o back-end.
+
+A construção desse site permitirá o amadurecimento nas tecnologias e conceitos abaixo:
    - [X] Utilizar tags HTML básicas e semânticas;
-   - [X] Utilizar tags de tabelas;
+   - [X] Utilizar tags de formulários;
    - [X] Utilizar Flexbox e media queries.
 
-## Aprendizados Adicionais
+## Reforços Adicionais de Aprendizado
 Além dos conceitos acima que foram praticados, expandi os estudos para colocar em prática QA e CI usando ferramentas automatizadas:
+   - [X] Construção de protótipos antes do desenvolvimento.
    - [X] Utilização da extensão ESLint para verificação de qualidade;
    - [X] Utilização da ferramenta SonarQube;
    - [X] Utilização de CI para publicação no gitHub Pages;
